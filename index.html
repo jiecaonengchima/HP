@@ -10,8 +10,26 @@
 <br> 
 <a href="https://leefreud.github.io/blog/index_ja.html">Friendly link to LenFired</a> 
 </br> 
-<br>
-<button type="button" onclick="alert('起身叼嗨啦！')">闹钟？</button>
+<button onclick="diaohaima()">闹钟？</button>
+<p id="diohai"></p>
+<script>
+function diaohaima()
+{
+var str_ts="";
+var Kyohours=new Date().getHours();
+if (Kyohours>23 || Kyohours<6)
+  {
+  str_ts="训啦7头！";
+  }
+else
+  {
+if (Kyohours>6 || Kyohours <9)
+  str_ts="起身叼嗨啦！";
+  }
+document.write("<p align='center'>"+str_ts+"</p>");	
+document.write("<br><br><a href='index.html'><p align='center'>翻去叼嗨啦</p></a></br></br>" );	
+}
+</script>
 </body> 
 </html>
 
