@@ -3,6 +3,7 @@
 <title>叼嗨啦ii4</title>
 <link rel="shortcut icon" href="/favicon.ico"/>
 <link rel="bookmark" href="/favicon.ico"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body text="#0066FF" align="center"> 
@@ -17,17 +18,21 @@ function diaohaima()
 {
 var str_ts="";
 var Kyohours=new Date().getHours();
-if (Kyohours>23 || Kyohours<6)
+if (Kyohours>22 || Kyohours<6)
   {
   str_ts="训啦7头！";
   }
-else
+else if(Kyohours>6 && Kyohours <12)
   {
-if (Kyohours>6 || Kyohours <9)
-  str_ts="起身叼嗨啦！";
+	str_ts="起身叼嗨啦！";
   }
+else
+	{
+	str_ts="得闲？去睇下<a href=viewer.html>风景</a>啦！";
+	}
+document.write("<title>叼嗨Alarm Now</title>");	
 document.write("<p align='center'>"+str_ts+"</p>");	
-document.write("<br><br><a href='index.html'><p align='center'>翻去叼嗨啦</p></a></br></br>" );	
+document.write("<br><br><a href='index.html'><p align='center'>翻去【叼嗨啦】</p></a></br></br>" );	
 }
 </script>
 </body> 
